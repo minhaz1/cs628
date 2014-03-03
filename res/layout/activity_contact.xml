@@ -219,7 +219,7 @@
     </LinearLayout>
 
     <ListView
-        android:id="@+id/listView1"
+        android:id="@+id/contactList"
         android:layout_width="250dp"
         android:layout_height="150dp"
         android:layout_weight="0.26" />

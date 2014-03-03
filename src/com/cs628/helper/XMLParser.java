@@ -1,6 +1,7 @@
 package com.cs628.helper;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -20,21 +21,25 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+import android.os.Environment;
+
 public class XMLParser {
 	Document doc;
 	Node item;
 	DocumentBuilder docBuilder;
-	String filepath;
-
-	
-	public XMLParser(String fileLocation){
+	String filepath = Environment.getExternalStorageDirectory().getAbsolutePath()+"/diary.xml";
+	String XMLFILE = "<?xml version = '1.0' encoding = 'UTF-8'?>\r\n<items>\r\n<contact\r\ntype=\"faculty\"\r\nname=\"Dr. Nilanjan Banerjee\"\r\nposition=\"Assistant Professor\"\r\noffice=\"ITE 362\"\r\nemail=\"nilanb@umbc.edu\"\r\nphone=\"999999999\"\r\noffice_hour=\"10-11am Mon,thursday\">\r\n<course name=\"Wireless Network and Systems\" CRN=\"CS 795\"/>\r\n<course name=\"App Development for Smart Devices\" CRN=\"CS 495\"/>\r\n</contact>\r\n\r\n<courses\r\nCN=\"16746\"\r\ncourseTitle=\"Database Concept\"\r\ncreditHours=\"3.00\"\r\nDays=\"TR\"\r\nTime=\"1:30-2:45pm\"\r\n/>\r\n\r\n<events\r\ntype=\"class\"\r\ntime=\"1:30-2:45pm\"\r\nday=\"TR\"\r\nnote=\"Class Database\" />\r\n\r\n<events\r\ntype=\"appointment\"\r\ntime=\"1:30-2:45pm\"\r\nday=\"W\"\r\nnote=\"TA Database\" />\r\n\r\n<news\r\ntitle=\"Talk: Self-sustainable Cyber-physical Systems Design\"\r\nkeyword=\"Sustainability\"\r\nhighlights=\"Nilanjan Banerjee\"\r\n/>\r\n</items>\r\n";
+	public XMLParser(){
 		try {
-			File fileToOpen = new File(fileLocation);
+			File file = new File(filepath);
+			FileOutputStream fos = new FileOutputStream(file);
+			fos.write(XMLFILE.getBytes());
+			fos.close();
+			File fileToOpen = new File(filepath);
 			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
 			docBuilder = docFactory.newDocumentBuilder();
-			System.out.println(fileLocation);
+			System.out.println(filepath);
 			doc = docBuilder.parse(fileToOpen);
-			this.filepath = fileLocation;
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
@@ -82,7 +87,7 @@ public class XMLParser {
 	public void editContactInfo(ContactInfo c){
 		Node info = doc.getElementsByTagName("contact").item(0); 
 		info.getAttributes().getNamedItem("type").setTextContent(c.getType());
-		info.getAttributes().getNamedItem("name").setTextContent(c.getEmail());
+		info.getAttributes().getNamedItem("name").setTextContent(c.getName());
 		info.getAttributes().getNamedItem("position").setTextContent(c.getPosition());
 		info.getAttributes().getNamedItem("office").setTextContent(c.getOffice());
 		info.getAttributes().getNamedItem("email").setTextContent(c.getEmail());
@@ -264,7 +269,7 @@ public class XMLParser {
 
 	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		XMLParser parser = new XMLParser("/Users/minhazm/Downloads/diary.xml");
 		
 //		System.out.println(parser.getContactInfo());
@@ -280,7 +285,7 @@ public class XMLParser {
 		
 		System.out.println();
 		System.out.println(parser.getEvents());
-	}
+	}*/
 	
 
 }

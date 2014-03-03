@@ -220,8 +220,8 @@
 
     <ListView
         android:id="@+id/contactList"
-        android:layout_width="250dp"
-        android:layout_height="150dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_weight="0.26" />
 
 </LinearLayout>

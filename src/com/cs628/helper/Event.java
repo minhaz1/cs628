@@ -10,6 +10,10 @@ public class Event {
 
 	private String type, time, day, note;
 
+	public Event(){
+		// no arg constructor
+	}
+	
 	public Event(String type, String time, String day, String note) {
 		super();
 		this.type = type;

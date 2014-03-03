@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<items>
+<contact
+type="faculty"
+name="Dr. Nilanjan Banerjee"
+position="Assistant Professor"
+office="ITE 362"
+email="nilanb@umbc.edu"
+phone="999999999"
+offile_hour="10-11am Mon,thursday">
+<course name="Wireless Network and Systems" CRN="CS 795"/>
+<course name="App Development for Smart Devices" CRN="CS 495"/>
+</contact>
+
+<courses
+CN="16746"
+courseTitle="Database Concept"
+creditHours="3.00"
+Days="TR"
+Time="1:30-2:45pm"
+/>
+
+<events
+type="class"
+time="1:30-2:45pm"
+day="TR"
+note="Class Database" />
+
+<events
+type="appointment"
+time="1:30-2:45pm"
+day="W"
+note="TA Database" />
+
+<news
+title="Talk: Self-sustainable Cyber-physical Systems Design"
+keyword="Sustainability"
+highlights="Nilanjan Banerjee"
+/>
+</items>
+

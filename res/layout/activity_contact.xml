@@ -15,14 +15,21 @@
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true" >
 
-    <LinearLayout
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
         android:orientation="horizontal" 
             android:focusable="true"
     android:clickable="true"
-    android:focusableInTouchMode="true" >
+    android:focusableInTouchMode="true"
+            >
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -44,9 +51,9 @@
        android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
 
-    <LinearLayout
+</TableRow>
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -72,9 +79,9 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -100,9 +107,9 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -129,9 +136,9 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -158,9 +165,9 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -187,9 +194,9 @@
                   android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -216,8 +223,8 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
-
+    </TableRow>
+</TableLayout>
     <View
  android:layout_width="match_parent"
  android:layout_height="1dp"

@@ -18,7 +18,7 @@
         android:textColor="@color/tinge_orange"
         android:layout_marginBottom="45sp"
         android:gravity="left"
-        android:textSize="60dip">
+        android:textSize="60sp">
         </TextView>
 
     <LinearLayout
@@ -31,7 +31,6 @@
      android:id="@+id/contact_screen_button"
      android:layout_width="@dimen/button_width"
      android:layout_height="wrap_content"
-     android:layout_gravity="left"
      android:background="@color/transparent_black"
      android:text="@string/contact_button_text"
      android:textColor="@color/tinge_orange"
@@ -43,7 +42,6 @@
 	    android:id="@+id/courses_screen_button"
 	    android:layout_width="@dimen/button_width"
 	    android:layout_height="wrap_content"
-	    android:layout_gravity="left"
 	    android:layout_marginLeft="20sp"
 	    android:background="@color/transparent_black"
 	    android:text="@string/course_button_text"
@@ -63,7 +61,6 @@
 	        android:id="@+id/events_screen_button"
 	        android:layout_width="@dimen/button_width"
 	        android:layout_height="wrap_content"
-	        android:layout_gravity="left"
 	        android:background="@color/transparent_black"
 	        android:text="@string/events_button_text"
 	        android:textColor="@color/tinge_orange"
@@ -75,7 +72,6 @@
 	        android:id="@+id/news_screen_button"
 	        android:layout_width="@dimen/button_width"
 	        android:layout_height="wrap_content"
-	        android:layout_gravity="left"
 	        android:layout_marginLeft="15sp"
 	        android:background="@color/transparent_black"
 	        android:text="@string/news_button_text"
@@ -85,6 +81,18 @@
 	    </Button>
 
 		</LinearLayout>
-	
    
+	    <Button
+     android:id="@+id/main_screen_help"
+     android:layout_width="@dimen/button_width"
+     android:layout_height="wrap_content"
+     android:background="@color/transparent_black"
+     android:text="Help"
+     android:textColor="@color/tinge_orange"
+     android:textSize="22sp"
+     android:gravity="center"
+     android:layout_gravity="center" >
+	        
+	    </Button>
+	    
 </LinearLayout>

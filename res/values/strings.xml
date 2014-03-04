@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">hw2</string>
+    <string name="app_name">Academic Diary</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="course_button_text">Courses</string>
     <string name="news_button_text">News</string>
-    <string name="contact_button_text">Contact</string>
+    <string name="contact_button_text">My Info</string>
     <string name="events_button_text">Events</string>
     <string name="button_opacity_color">#Ff1B1B1B</string>
     <string name="button_text_color">#F1684E</string>
@@ -14,9 +14,9 @@
     <string name="button_width">100 dip</string>
     <string name="title_activity_content__screen">Content_Screen</string>
     <string name="title_activity_news">NewsActivity</string>
-    <string name="title_activity_classes">ClassesActivity</string>
-    <string name="title_activity_contact">ContactActivity</string>
-    <string name="title_activity_courses">CoursesActivity</string>
-    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_classes">Classes</string>
+    <string name="title_activity_contact">My Information</string>
+    <string name="title_activity_courses">Courses</string>
+    <string name="title_activity_events">Events</string>
 
 </resources>

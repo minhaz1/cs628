@@ -21,7 +21,7 @@
      	android:orientation="horizontal"
         >
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -30,6 +30,7 @@
     android:clickable="true"
     android:focusableInTouchMode="true" >
 
+        <TableRow>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,9 +51,11 @@
        android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+        </TableRow>
+    
+        
 
-    <LinearLayout
+    <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -79,16 +82,10 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    </LinearLayout>
     
-        <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-     	android:orientation="horizontal"
-        >
-    <LinearLayout
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -114,9 +111,42 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
+    
+      <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:orientation="horizontal" >
 
-    <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:gravity="left"
+            android:text="Email"
+            android:textColor="@color/tinge_orange"
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/email_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:gravity="right"
+
+            android:hint="{ Email }"
+                   android:textColor="@color/transparent_black"
+            android:textSize="15sp" >
+        </EditText>
+    </TableRow>
+</TableLayout>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+    <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -144,16 +174,10 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    </LinearLayout>
-    
-        <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-     	android:orientation="horizontal"
-        >
-    <LinearLayout
+
+    <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
@@ -180,9 +204,9 @@
                    android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    <LinearLayout
+    <TableRow
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
@@ -209,38 +233,12 @@
                   android:textColor="@color/transparent_black"
             android:textSize="15sp" >
         </EditText>
-    </LinearLayout>
+    </TableRow>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dip"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dip"
-            android:gravity="left"
-            android:text="Email"
-            android:textColor="@color/tinge_orange"
-            android:textSize="15sp" >
-        </TextView>
-
-        <EditText
-            android:id="@+id/email_field"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dip"
-            android:gravity="right"
-
-            android:hint="{ Email }"
-                   android:textColor="@color/transparent_black"
-            android:textSize="15sp" >
-        </EditText>
-    </LinearLayout>
-
+    
+  
+</TableLayout>
+</LinearLayout>
     <View
  android:layout_width="match_parent"
  android:layout_height="1dp"
@@ -259,4 +257,5 @@
  android:background="@android:color/black" 
  android:layout_marginBottom="20dp"/>
     
+
 </LinearLayout>

@@ -38,7 +38,7 @@ public class NewsActivity extends Activity {
 		parser = new XMLParser();
 		updateNewsList();
 
-		SimpleAdapter adapter = new SimpleAdapter(this, newslist,
+		 adapter = new SimpleAdapter(this, newslist,
 				R.layout.news_row, new String[] { "highlights", "keywords",
 						"title" }, new int[] { R.id.news_highlights,
 						R.id.news_keywords, R.id.news_title });

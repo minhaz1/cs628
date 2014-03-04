@@ -96,7 +96,7 @@ public class CoursesActivity extends Activity {
 												.toString());
 										course.setTitle(title.getText()
 												.toString());
-										course.setCredits(title.getText()
+										course.setCredits(credits.getText()
 												.toString());
 										course.setDays(days.getText()
 												.toString());

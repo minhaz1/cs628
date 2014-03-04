@@ -11,20 +11,31 @@
     android:orientation="vertical"
     android:gravity="center">
 	
-    <TextView 
+ <TextView 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="News"
         android:textColor="@color/tinge_orange"
-        android:layout_marginBottom="45sp"
         android:gravity="left"
-        android:textSize="60dip">
+        android:textSize="60sp"
+        android:layout_marginBottom="5dp">
         </TextView>
+
+<View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="@android:color/black" 
+ android:layout_marginBottom="20dp"/>
 
        <ListView
            android:id="@+id/newsList"
            android:layout_width="fill_parent"
            android:layout_height="fill_parent" />
 	
+       <View
+ android:layout_width="match_parent"
+ android:layout_height="1dp"
+ android:background="@android:color/black" 
+ android:layout_marginBottom="20dp"/>
    
 </LinearLayout>

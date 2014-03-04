@@ -155,7 +155,7 @@ public class ContactActivity extends Activity {
 											int which) {
 										course.setCoursename(coursename
 												.getText().toString());
-										course.setCoursenum(coursename
+										course.setCoursenum(coursenum
 												.getText().toString());
 										parser.editCourse(contact);
 										updateCourseList();

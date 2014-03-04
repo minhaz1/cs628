@@ -14,6 +14,12 @@
     android:clickable="true"
     android:descendantFocusability="beforeDescendants"
     android:focusableInTouchMode="true" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     	android:orientation="horizontal"
+        >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -47,9 +53,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
+        android:gravity="right"
         android:orientation="horizontal" >
 
         <TextView
@@ -74,6 +81,13 @@
         </EditText>
     </LinearLayout>
 
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+     	android:orientation="horizontal"
+        >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -103,10 +117,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dip"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:gravity="right" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,6 +146,13 @@
         </EditText>
     </LinearLayout>
 
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     	android:orientation="horizontal"
+        >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -161,8 +183,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:gravity="right"
         android:layout_marginBottom="5dip"
         android:orientation="horizontal" >
 
@@ -170,7 +193,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dip"
-            android:gravity="left"
             android:text="Phone Number"
             android:textColor="@color/tinge_orange"
             android:textSize="15sp" >
@@ -181,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dip"
-            android:gravity="right"
+            
 
             android:hint="{ Phone Number } "
                   android:textColor="@color/transparent_black"
@@ -189,6 +211,7 @@
         </EditText>
     </LinearLayout>
 
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

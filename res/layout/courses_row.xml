@@ -2,25 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:padding="15dip" >
     
     <LinearLayout
         
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         
-<TextView
-    android:id="@+id/courses_cn"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="5sp"
-    android:gravity="left"
-    android:text="News"
-    android:textColor="@color/tinge_orange"
-    android:textSize="15dip" >
 
-        </TextView>
     
         <TextView
             android:id="@+id/courses_course_title"
@@ -28,59 +19,73 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:gravity="left"
-            android:text="News"
-            android:textColor="@color/tinge_orange"
-            android:textSize="15dip" >
+            android:text="Course Title"
+                  android:textColor="@color/transparent_black"
+            android:textSize="20sp" >
+
+            </TextView>
+            <TextView
+    android:id="@+id/courses_cn"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5sp"
+    android:gravity="right"
+    android:text="cn"
+          android:textColor="@color/transparent_black"
+    android:textSize="20sp" >
 
         </TextView>
+
             
         
     </LinearLayout>
         
         <LinearLayout
         
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
         
-<TextView
-    android:id="@+id/courses_credit_hours"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="5sp"
-    android:gravity="left"
-    android:text="News"
-    android:textColor="@color/tinge_orange"
-    android:textSize="15dip" >
-
-        </TextView>
-    
-        <TextView
+                    <TextView
             android:id="@+id/courses_days"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
             android:gravity="left"
-            android:text="News"
-            android:textColor="@color/tinge_orange"
-            android:textSize="15dip" >
+            android:text="Course Days"
+                  android:textColor="@color/transparent_black"
+            android:textSize="20sp" >
 
         </TextView>
+
+    
+
             
         <TextView
             android:id="@+id/courses_time"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5sp"
-            android:gravity="left"
-            android:text="News"
-            android:textColor="@color/tinge_orange"
-            android:textSize="15dip" >
+            android:gravity="right"
+            android:text="Course Times"
+            android:textColor="@color/transparent_black"
+            android:textSize="20sp" >
 
         </TextView>
         
     </LinearLayout>
  
+        <TextView
+    android:id="@+id/courses_credit_hours"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5sp"
+    android:gravity="left"
+    android:text="Credit Hours"
+    android:textColor="@color/transparent_black"
+    android:textSize="20sp" >
+
+        </TextView>
 
 </LinearLayout>
